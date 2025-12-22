@@ -21,6 +21,8 @@
 <hr/>
 
 <ul>
+    <p>Customer: <strong>@(Model.User?.Email ?? Model.UserId)</strong></p>
+
     @foreach (var item in Model.Items)
     {
         <li>@item.ProductName × @item.Quantity (@item.UnitPrice)</li>

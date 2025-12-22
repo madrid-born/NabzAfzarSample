@@ -16,6 +16,7 @@ public class OrdersController : Controller
     public async Task<IActionResult> Index()
     {
         var orders = await _db.Orders
+            .Include(o => o.User)
             .Include(o => o.Items)
             .OrderByDescending(o => o.CreatedAt)
             .ToListAsync();
@@ -26,6 +27,7 @@ public class OrdersController : Controller
     public async Task<IActionResult> Edit(int id)
     {
         var order = await _db.Orders
+            .Include(o => o.User)
             .Include(o => o.Items)
             .FirstOrDefaultAsync(o => o.Id == id);
 

@@ -7,6 +7,7 @@
     <tr>
         <th>#</th>
         <th>Date</th>
+        <th>Customer</th>
         <th>Total</th>
         <th>Status</th>
         <th></th>
@@ -18,11 +19,11 @@
         <tr>
             <td>@o.Id</td>
             <td>@o.CreatedAt.ToLocalTime()</td>
+            <td>@(o.User?.Email ?? o.UserId)</td>
             <td>@o.TotalAmount</td>
             <td>@o.Status</td>
             <td>
-                <a asp-action="Edit" asp-route-id="@o.Id"
-                   class="btn btn-sm btn-outline-primary">View</a>
+                <a asp-action="Edit" asp-route-id="@o.Id" class="btn btn-sm btn-outline-primary">View</a>
             </td>
         </tr>
     }

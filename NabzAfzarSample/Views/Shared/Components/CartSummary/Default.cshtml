@@ -1,5 +1,5 @@
 @model int
 
-<a class="nav-link" asp-controller="Cart" asp-action="Index">
+<a class="nav-link" asp-area="" asp-controller="Cart" asp-action="Index">
     Cart @if (Model > 0) { <span class="badge bg-primary">@Model</span> }
 </a>

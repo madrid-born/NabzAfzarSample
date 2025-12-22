@@ -55,7 +55,8 @@ app.MapControllerRoute(
 
 app.MapControllerRoute(
     name: "default",
-    pattern: "{controller=Home}/{action=Index}/{id?}");
+    pattern: "{controller=Shop}/{action=Index}/{id?}");
+
 
 await ShopSeeder.SeedAsync(app.Services);
 await IdentitySeeder.SeedAsync(app.Services);

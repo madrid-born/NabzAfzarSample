@@ -10,14 +10,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="df67e6af-6a98-42b8-a799-26336f48dec6" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/NabzAfzarSample/Data/Seed/ShopSeeder.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/NabzAfzarSample/ViewComponents/CartSummaryViewComponent.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/NabzAfzarSample/Views/Shared/Components/CartSummary/Default.cshtml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.NabzAfzarSample/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.NabzAfzarSample/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NabzAfzarSample/Areas/Admin/Views/Products/Index.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/NabzAfzarSample/Areas/Admin/Views/Products/Index.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NabzAfzarSample/Controllers/CartController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/NabzAfzarSample/Controllers/CartController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NabzAfzarSample/Controllers/CheckoutController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/NabzAfzarSample/Controllers/CheckoutController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/NabzAfzarSample/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/NabzAfzarSample/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NabzAfzarSample/Views/Shared/Components/CartSummary/Default.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/NabzAfzarSample/Views/Shared/Components/CartSummary/Default.cshtml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/NabzAfzarSample/Views/Shared/_Layout.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/NabzAfzarSample/Views/Shared/_Layout.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NabzAfzarSample/wwwroot/css/site.css" beforeDir="false" afterPath="$PROJECT_DIR$/NabzAfzarSample/wwwroot/css/site.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,6 +36,7 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/294078ecfce6fdb942ecfee089f09717de7a6fcfe5efd9fdb6f4f93c0fb4813/ActionMethodExecutor.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/96a4cc66aa48dda8a9d8be8febec4a769fc143f7a86dd53ecdebfb9c3177d/ControllerBase.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://D:/Code/My Projects/C#/ASP .NET/NabzAfzarSample/NabzAfzarSample/Program.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://D:/Code/My Projects/C#/ASP .NET/NabzAfzarSample/NabzAfzarSample/Views/Shared/_Layout.cshtml" root0="FORCE_HIGHLIGHTING" root1="SKIP_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
   </component>
@@ -127,7 +126,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1766428812185</updated>
-      <workItem from="1766428814166" duration="12600000" />
+      <workItem from="1766428814166" duration="13873000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <option name="closed" value="true" />
@@ -217,7 +216,15 @@
       <option name="project" value="LOCAL" />
       <updated>1766441047138</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Cart management">
+      <option name="closed" value="true" />
+      <created>1766441691805</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1766441691805</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -249,7 +256,8 @@
     <MESSAGE value="Admin order control" />
     <MESSAGE value="search" />
     <MESSAGE value="Cart Summary" />
-    <option name="LAST_COMMIT_MESSAGE" value="Cart Summary" />
+    <MESSAGE value="Cart management" />
+    <option name="LAST_COMMIT_MESSAGE" value="Cart management" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
