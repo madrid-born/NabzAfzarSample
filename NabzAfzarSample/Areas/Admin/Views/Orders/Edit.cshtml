@@ -1,0 +1,28 @@
+@model NabzAfzarSample.Models.Orders.Order
+
+<h2>Order #@Model.Id</h2>
+
+<p>Status: <strong>@Model.Status</strong></p>
+
+<form asp-action="UpdateStatus" method="post">
+    @Html.AntiForgeryToken()
+    <input type="hidden" name="id" value="@Model.Id"/>
+
+    <select name="status" class="form-select mb-3">
+        @foreach (var s in Enum.GetValues(typeof(NabzAfzarSample.Models.Orders.OrderStatus)))
+        {
+            <option value="@s" selected="@(s.Equals(Model.Status))">@s</option>
+        }
+    </select>
+
+    <button class="btn btn-primary">Update Status</button>
+</form>
+
+<hr/>
+
+<ul>
+    @foreach (var item in Model.Items)
+    {
+        <li>@item.ProductName × @item.Quantity (@item.UnitPrice)</li>
+    }
+</ul>
