@@ -1,0 +1,19 @@
+@model List<NabzAfzarSample.Models.Product>
+
+<h2>Shop</h2>
+
+<div class="row">
+    @foreach (var p in Model)
+    {
+        <div class="col-md-4 mb-4">
+            <div class="card">
+                <div class="card-body">
+                    <h5>@p.Name</h5>
+                    <p>@p.Category.Name</p>
+                    <p>@p.Price</p>
+                    <a class="btn btn-sm btn-primary">View</a>
+                </div>
+            </div>
+        </div>
+    }
+</div>

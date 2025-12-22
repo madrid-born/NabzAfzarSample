@@ -10,20 +10,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="df67e6af-6a98-42b8-a799-26336f48dec6" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/NabzAfzarSample/Areas/Admin/Controllers/CategoriesController.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/NabzAfzarSample/Areas/Admin/Controllers/DashboardController.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/NabzAfzarSample/Areas/Admin/Views/Categories/Create.cshtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/NabzAfzarSample/Areas/Admin/Views/Categories/Edit.cshtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/NabzAfzarSample/Areas/Admin/Views/Categories/Index.cshtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/NabzAfzarSample/Areas/Admin/Views/Dashboard/Index.cshtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/NabzAfzarSample/Models/Category.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/NabzAfzarSample/Models/Product.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/NabzAfzarSample/Models/ProductImage.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NabzAfzarSample/Areas/Admin/Controllers/ProductsController.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NabzAfzarSample/Areas/Admin/Views/Products/Create.cshtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NabzAfzarSample/Areas/Admin/Views/Products/Edit.cshtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NabzAfzarSample/Areas/Admin/Views/Products/Index.cshtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NabzAfzarSample/Areas/Admin/Views/_ViewImports.cshtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NabzAfzarSample/Controllers/ShopController.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NabzAfzarSample/Views/Shop/Index.cshtml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.NabzAfzarSample/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.NabzAfzarSample/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NabzAfzarSample/Data/ApplicationDbContext.cs" beforeDir="false" afterPath="$PROJECT_DIR$/NabzAfzarSample/Data/ApplicationDbContext.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NabzAfzarSample/Migrations/ApplicationDbContextModelSnapshot.cs" beforeDir="false" afterPath="$PROJECT_DIR$/NabzAfzarSample/Migrations/ApplicationDbContextModelSnapshot.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NabzAfzarSample/Models/Product.cs" beforeDir="false" afterPath="$PROJECT_DIR$/NabzAfzarSample/Models/Product.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/NabzAfzarSample/NabzAfzarSample.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/NabzAfzarSample/NabzAfzarSample.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NabzAfzarSample/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/NabzAfzarSample/Program.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/NabzAfzarSample/Views/Shared/_Layout.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/NabzAfzarSample/Views/Shared/_Layout.cshtml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -31,11 +27,22 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="ChangesViewManager">
+    <option name="groupingKeys">
+      <option value="directory" />
+      <option value="repository" />
+    </option>
+  </component>
   <component name="DpaMonitoringSettings">
     <option name="firstShow" value="false" />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/294078ecfce6fdb942ecfee089f09717de7a6fcfe5efd9fdb6f4f93c0fb4813/ActionMethodExecutor.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock://D:/Code/My Projects/C#/ASP .NET/NabzAfzarSample/NabzAfzarSample/Program.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://D:/Code/My Projects/C#/ASP .NET/NabzAfzarSample/NabzAfzarSample/Views/Shared/_Layout.cshtml" root0="FORCE_HIGHLIGHTING" root1="SKIP_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
   </component>
   <component name="KubernetesApiPersistence"><![CDATA[{}]]></component>
   <component name="KubernetesApiProvider"><![CDATA[{
@@ -56,7 +63,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    ".NET Launch Settings Profile.NabzAfzarSample: https.executor": "Run",
+    ".NET Launch Settings Profile.NabzAfzarSample: https.executor": "Debug",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
@@ -123,7 +130,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1766428812185</updated>
-      <workItem from="1766428814166" duration="4550000" />
+      <workItem from="1766428814166" duration="7070000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <option name="closed" value="true" />
@@ -141,7 +148,23 @@
       <option name="project" value="LOCAL" />
       <updated>1766432560729</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="product models">
+      <option name="closed" value="true" />
+      <created>1766434295594</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1766434295594</updated>
+    </task>
+    <task id="LOCAL-00004" summary="admin area">
+      <option name="closed" value="true" />
+      <created>1766434303586</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1766434303586</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -153,7 +176,9 @@
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="initial commit" />
     <MESSAGE value="Step 1" />
-    <option name="LAST_COMMIT_MESSAGE" value="Step 1" />
+    <MESSAGE value="product models" />
+    <MESSAGE value="admin area" />
+    <option name="LAST_COMMIT_MESSAGE" value="admin area" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -170,6 +195,19 @@
           <properties exception="System.Threading.ThreadAbortException" breakIfHandledByOtherCode="false" displayValue="System.Threading.ThreadAbortException" />
           <option name="timeStamp" value="3" />
         </breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/NabzAfzarSample/Areas/Admin/Controllers/ProductsController.cs</url>
+          <line>39</line>
+          <properties documentPath="D:\Code\My Projects\C#\ASP .NET\NabzAfzarSample\NabzAfzarSample\Areas\Admin\Controllers\ProductsController.cs" containingFunctionPresentation="Method 'Create'">
+            <startOffsets>
+              <option value="1055" />
+            </startOffsets>
+            <endOffsets>
+              <option value="1056" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>

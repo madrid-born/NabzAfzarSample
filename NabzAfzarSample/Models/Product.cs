@@ -1,5 +1,7 @@
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+using System.Text.Json.Serialization;
+using Microsoft.AspNetCore.Mvc.ModelBinding.Validation;
 
 namespace NabzAfzarSample.Models;
 
@@ -25,6 +27,7 @@ public class Product
     // Foreign Key
     [Required]
     public int CategoryId { get; set; }
+    [ValidateNever]   // ✅ THIS is the key
     public Category Category { get; set; } = null!;
 
     // Navigation
