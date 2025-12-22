@@ -10,9 +10,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="df67e6af-6a98-42b8-a799-26336f48dec6" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/NabzAfzarSample/ViewModels/Shop/ShopIndexVm.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NabzAfzarSample/Controllers/ShopController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/NabzAfzarSample/Controllers/ShopController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NabzAfzarSample/Views/Shop/Index.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/NabzAfzarSample/Views/Shop/Index.cshtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NabzAfzarSample/Data/Seed/ShopSeeder.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NabzAfzarSample/ViewComponents/CartSummaryViewComponent.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NabzAfzarSample/Views/Shared/Components/CartSummary/Default.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.NabzAfzarSample/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.NabzAfzarSample/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NabzAfzarSample/Areas/Admin/Views/Products/Index.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/NabzAfzarSample/Areas/Admin/Views/Products/Index.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NabzAfzarSample/Controllers/CartController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/NabzAfzarSample/Controllers/CartController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NabzAfzarSample/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/NabzAfzarSample/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NabzAfzarSample/Views/Shared/_Layout.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/NabzAfzarSample/Views/Shared/_Layout.cshtml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -122,7 +127,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1766428812185</updated>
-      <workItem from="1766428814166" duration="11188000" />
+      <workItem from="1766428814166" duration="12600000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <option name="closed" value="true" />
@@ -196,7 +201,23 @@
       <option name="project" value="LOCAL" />
       <updated>1766439968233</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="search">
+      <option name="closed" value="true" />
+      <created>1766440262120</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1766440262120</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Cart Summary">
+      <option name="closed" value="true" />
+      <created>1766441047138</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1766441047138</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -204,6 +225,17 @@
   </component>
   <component name="UnityCheckinConfiguration" checkUnsavedScenes="true" />
   <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="initial commit" />
@@ -215,7 +247,9 @@
     <MESSAGE value="Order" />
     <MESSAGE value="Favorite" />
     <MESSAGE value="Admin order control" />
-    <option name="LAST_COMMIT_MESSAGE" value="Admin order control" />
+    <MESSAGE value="search" />
+    <MESSAGE value="Cart Summary" />
+    <option name="LAST_COMMIT_MESSAGE" value="Cart Summary" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

@@ -24,6 +24,12 @@ public class CartController : Controller
         var product = await _db.Products.FindAsync(productId);
         if (product == null) return NotFound();
 
+        if (product.StockQuantity <= 0)
+        {
+            TempData["Toast"] = "This product is out of stock.";
+            return Redirect(returnUrl ?? Url.Action("Index", "Shop")!);
+        }
+
         var cart = HttpContext.Session.GetObject<List<CartItem>>(CartKey)
                    ?? new List<CartItem>();
 
@@ -40,6 +46,11 @@ public class CartController : Controller
         }
         else
         {
+            if (item.Quantity >= product.StockQuantity)
+            {
+                TempData["Toast"] = "You reached the maximum available stock for this product.";
+                return Redirect(returnUrl ?? Url.Action("Index", "Shop")!);
+            }
             item.Quantity++;
         }
 

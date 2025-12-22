@@ -24,7 +24,13 @@
             <td>@p.Name</td>
             <td>@p.Category.Name</td>
             <td>@p.Price</td>
-            <td>@p.StockQuantity</td>
+            <td>
+                @p.StockQuantity
+                @if (p.StockQuantity <= 5)
+                {
+                    <span class="badge bg-warning text-dark ms-2">Low</span>
+                }
+            </td>
             <td>@p.IsActive</td>
             <td class="text-end">
                 <a class="btn btn-sm btn-outline-secondary"
