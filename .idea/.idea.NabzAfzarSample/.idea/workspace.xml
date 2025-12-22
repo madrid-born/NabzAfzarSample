@@ -10,16 +10,29 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="df67e6af-6a98-42b8-a799-26336f48dec6" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/NabzAfzarSample/Data/ApplicationDbContext.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/NabzAfzarSample/Data/Seed/IdentitySeeder.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NabzAfzarSample/Areas/Admin/Controllers/CategoriesController.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NabzAfzarSample/Areas/Admin/Controllers/DashboardController.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NabzAfzarSample/Areas/Admin/Views/Categories/Create.cshtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NabzAfzarSample/Areas/Admin/Views/Categories/Edit.cshtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NabzAfzarSample/Areas/Admin/Views/Categories/Index.cshtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NabzAfzarSample/Areas/Admin/Views/Dashboard/Index.cshtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NabzAfzarSample/Models/Category.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NabzAfzarSample/Models/Product.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NabzAfzarSample/Models/ProductImage.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.NabzAfzarSample/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.NabzAfzarSample/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NabzAfzarSample/Data/ApplicationDbContext.cs" beforeDir="false" afterPath="$PROJECT_DIR$/NabzAfzarSample/Data/ApplicationDbContext.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NabzAfzarSample/Migrations/ApplicationDbContextModelSnapshot.cs" beforeDir="false" afterPath="$PROJECT_DIR$/NabzAfzarSample/Migrations/ApplicationDbContextModelSnapshot.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/NabzAfzarSample/NabzAfzarSample.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/NabzAfzarSample/NabzAfzarSample.csproj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/NabzAfzarSample/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/NabzAfzarSample/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NabzAfzarSample/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/NabzAfzarSample/appsettings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NabzAfzarSample/Views/Shared/_Layout.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/NabzAfzarSample/Views/Shared/_Layout.cshtml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DpaMonitoringSettings">
+    <option name="firstShow" value="false" />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -43,6 +56,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    ".NET Launch Settings Profile.NabzAfzarSample: https.executor": "Run",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
@@ -55,7 +69,7 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager" selected=".NET Launch Settings Profile.NabzAfzarSample: IIS Express">
+  <component name="RunManager" selected=".NET Launch Settings Profile.NabzAfzarSample: https">
     <configuration name="NabzAfzarSample: IIS Express" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
       <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/NabzAfzarSample/NabzAfzarSample.csproj" />
       <option name="LAUNCH_PROFILE_TFM" value="net8.0" />
@@ -109,7 +123,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1766428812185</updated>
-      <workItem from="1766428814166" duration="3334000" />
+      <workItem from="1766428814166" duration="4550000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <option name="closed" value="true" />
@@ -119,7 +133,15 @@
       <option name="project" value="LOCAL" />
       <updated>1766428863678</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Step 1">
+      <option name="closed" value="true" />
+      <created>1766432560729</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1766432560729</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -130,7 +152,8 @@
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="initial commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="initial commit" />
+    <MESSAGE value="Step 1" />
+    <option name="LAST_COMMIT_MESSAGE" value="Step 1" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

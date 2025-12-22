@@ -1,0 +1,41 @@
+@model List<NabzAfzarSample.Models.Category>
+@{
+    ViewData["Title"] = "Categories";
+}
+
+<h2>Categories</h2>
+
+<p>
+    <a class="btn btn-primary" asp-action="Create">New Category</a>
+</p>
+
+<table class="table table-striped">
+    <thead>
+    <tr>
+        <th>Name</th>
+        <th>Active</th>
+        <th>Created</th>
+        <th></th>
+    </tr>
+    </thead>
+    <tbody>
+    @foreach (var c in Model)
+    {
+        <tr>
+            <td>@c.Name</td>
+            <td>@c.IsActive</td>
+            <td>@c.CreatedAt.ToLocalTime()</td>
+            <td class="text-end">
+                <a class="btn btn-sm btn-outline-secondary" asp-action="Edit" asp-route-id="@c.Id">Edit</a>
+
+                <form asp-action="ToggleActive" asp-route-id="@c.Id" method="post" style="display:inline;">
+                    @Html.AntiForgeryToken()
+                    <button class="btn btn-sm btn-outline-warning" type="submit">
+                        @(c.IsActive ? "Deactivate" : "Activate")
+                    </button>
+                </form>
+            </td>
+        </tr>
+    }
+    </tbody>
+</table>
