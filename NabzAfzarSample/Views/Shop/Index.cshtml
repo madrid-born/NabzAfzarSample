@@ -1,17 +1,35 @@
 @model List<NabzAfzarSample.Models.Product>
+@{
+    var cart = ViewBag.Cart as List<NabzAfzarSample.Models.Cart.CartItem> ?? new();
+}
 
 <h2>Shop</h2>
 
 <div class="row">
     @foreach (var p in Model)
     {
+        var item = cart.FirstOrDefault(x => x.ProductId == p.Id);
+        var qty = item?.Quantity ?? 0;
+
         <div class="col-md-4 mb-4">
             <div class="card">
-                <div class="card-body">
+                <div class="card-body text-center">
                     <h5>@p.Name</h5>
-                    <p>@p.Category.Name</p>
                     <p>@p.Price</p>
-                    <a class="btn btn-sm btn-primary">View</a>
+
+                    <div class="d-flex justify-content-center align-items-center gap-2">
+                        <a class="btn btn-outline-danger btn-sm"
+                           asp-controller="Cart"
+                           asp-action="Decrease"
+                           asp-route-productId="@p.Id">−</a>
+
+                        <span class="fw-bold">@qty</span>
+
+                        <a class="btn btn-outline-success btn-sm"
+                           asp-controller="Cart"
+                           asp-action="Increase"
+                           asp-route-productId="@p.Id">+</a>
+                    </div>
                 </div>
             </div>
         </div>

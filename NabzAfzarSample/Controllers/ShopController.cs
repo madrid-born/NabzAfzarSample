@@ -1,6 +1,8 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using NabzAfzarSample.Data;
+using NabzAfzarSample.Extensions;
+using NabzAfzarSample.Models.Cart;
 
 namespace NabzAfzarSample.Controllers;
 
@@ -16,6 +18,11 @@ public class ShopController : Controller
             .Include(p => p.Category)
             .ToListAsync();
 
+        var cart = HttpContext.Session.GetObject<List<CartItem>>("CART") ?? [];
+
+        ViewBag.Cart = cart;
+
         return View(products);
     }
+
 }

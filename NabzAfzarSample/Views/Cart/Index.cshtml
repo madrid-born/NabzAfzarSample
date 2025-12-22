@@ -1,0 +1,47 @@
+@model List<NabzAfzarSample.Models.Cart.CartItem>
+
+<h2>Your Cart</h2>
+
+@if (!Model.Any())
+{
+    <p>Your cart is empty.</p>
+}
+else
+{
+    <table class="table">
+        <thead>
+        <tr>
+            <th>Product</th>
+            <th>Price</th>
+            <th>Qty</th>
+            <th>Total</th>
+            <th></th>
+        </tr>
+        </thead>
+        <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.ProductName</td>
+                <td>@item.Price</td>
+                <td>@item.Quantity</td>
+                <td>@item.Total</td>
+                <td class="text-center">
+                    <a asp-action="Decrease" asp-route-productId="@item.ProductId"
+                       class="btn btn-sm btn-outline-danger">−</a>
+
+                    <span class="mx-2">@item.Quantity</span>
+
+                    <a asp-action="Increase" asp-route-productId="@item.ProductId"
+                       class="btn btn-sm btn-outline-success">+</a>
+                </td>
+
+            </tr>
+        }
+        </tbody>
+    </table>
+
+    <h4>Total: @Model.Sum(x => x.Total)</h4>
+
+    <a class="btn btn-success">Checkout</a>
+}
