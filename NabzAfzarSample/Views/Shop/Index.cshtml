@@ -1,13 +1,42 @@
-@model List<NabzAfzarSample.Models.Product>
-@{
-    var cart = ViewBag.Cart as List<NabzAfzarSample.Models.Cart.CartItem> ?? [];
-    var favIds = ViewBag.FavoriteIds as HashSet<int> ?? [];
-}
+@model NabzAfzarSample.ViewModels.Shop.ShopIndexVm
 
 <h2>Shop</h2>
 
+<form method="get" class="row g-2 mb-3">
+    <div class="col-md-4">
+        <input name="q" value="@Model.Q" class="form-control" placeholder="Search products..." />
+    </div>
+
+    <div class="col-md-3">
+        <select name="categoryId" class="form-select">
+            <option value="">All Categories</option>
+            @foreach (var c in Model.Categories)
+            {
+                <option value="@c.Id" selected="@(Model.CategoryId == c.Id)">@c.Name</option>
+            }
+        </select>
+    </div>
+
+    <div class="col-md-3">
+        <select name="sort" class="form-select">
+            <option value="new" selected="@(Model.Sort == "new")">Newest</option>
+            <option value="price_asc" selected="@(Model.Sort == "price_asc")">Price: Low → High</option>
+            <option value="price_desc" selected="@(Model.Sort == "price_desc")">Price: High → Low</option>
+        </select>
+    </div>
+
+    <div class="col-md-2">
+        <button class="btn btn-primary w-100">Apply</button>
+    </div>
+</form>
+
+@{
+    var cart = ViewBag.Cart as List<NabzAfzarSample.Models.Cart.CartItem> ?? new();
+    var favIds = ViewBag.FavoriteIds as HashSet<int> ?? new HashSet<int>();
+}
+
 <div class="row">
-    @foreach (var p in Model)
+    @foreach (var p in Model.Products)
     {
         var item = cart.FirstOrDefault(x => x.ProductId == p.Id);
         var qty = item?.Quantity ?? 0;
@@ -17,16 +46,8 @@
             <div class="card">
                 <div class="card-body text-center">
                     <h5>@p.Name</h5>
+                    <p>@p.Category.Name</p>
                     <p>@p.Price</p>
-
-                    <a class="btn btn-sm @(isFav ? "btn-warning" : "btn-outline-warning") mt-2"
-                       asp-controller="Favorites"
-                       asp-action="Toggle"
-                       asp-route-productId="@p.Id"
-                       asp-route-returnUrl="@($"{Context.Request.Path}{Context.Request.QueryString}")">
-                        @(isFav ? "Remove from Favorites" : "Add to Favorites")
-                    </a>
-
 
                     <div class="d-flex justify-content-center align-items-center gap-2">
                         <a class="btn btn-outline-danger btn-sm"
@@ -43,8 +64,37 @@
                            asp-route-productId="@p.Id"
                            asp-route-returnUrl="@($"{Context.Request.Path}{Context.Request.QueryString}")">+</a>
                     </div>
+
+                    <a class="btn btn-sm @(isFav ? "btn-warning" : "btn-outline-warning") mt-2"
+                       asp-controller="Favorites"
+                       asp-action="Toggle"
+                       asp-route-productId="@p.Id"
+                       asp-route-returnUrl="@($"{Context.Request.Path}{Context.Request.QueryString}")">
+                        @(isFav ? "Remove from Favorites" : "Add to Favorites")
+                    </a>
                 </div>
             </div>
         </div>
     }
 </div>
+
+@if (Model.TotalPages > 1)
+{
+    <nav>
+        <ul class="pagination">
+            @for (int i = 1; i <= Model.TotalPages; i++)
+            {
+                <li class="page-item @(i == Model.Page ? "active" : "")">
+                    <a class="page-link"
+                       asp-action="Index"
+                       asp-route-q="@Model.Q"
+                       asp-route-categoryId="@Model.CategoryId"
+                       asp-route-sort="@Model.Sort"
+                       asp-route-page="@i">
+                        @i
+                    </a>
+                </li>
+            }
+        </ul>
+    </nav>
+}

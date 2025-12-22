@@ -10,13 +10,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="df67e6af-6a98-42b8-a799-26336f48dec6" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/NabzAfzarSample/Areas/Admin/Controllers/OrdersController.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/NabzAfzarSample/Areas/Admin/Views/Orders/Edit.cshtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/NabzAfzarSample/Areas/Admin/Views/Orders/Index.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.NabzAfzarSample/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.NabzAfzarSample/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NabzAfzarSample/Migrations/ApplicationDbContextModelSnapshot.cs" beforeDir="false" afterPath="$PROJECT_DIR$/NabzAfzarSample/Migrations/ApplicationDbContextModelSnapshot.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NabzAfzarSample/Models/Orders/Order.cs" beforeDir="false" afterPath="$PROJECT_DIR$/NabzAfzarSample/Models/Orders/Order.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NabzAfzarSample/Views/Shared/_Layout.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/NabzAfzarSample/Views/Shared/_Layout.cshtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NabzAfzarSample/ViewModels/Shop/ShopIndexVm.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NabzAfzarSample/Controllers/ShopController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/NabzAfzarSample/Controllers/ShopController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NabzAfzarSample/Views/Shop/Index.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/NabzAfzarSample/Views/Shop/Index.cshtml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -126,7 +122,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1766428812185</updated>
-      <workItem from="1766428814166" duration="10869000" />
+      <workItem from="1766428814166" duration="11188000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <option name="closed" value="true" />
@@ -192,7 +188,15 @@
       <option name="project" value="LOCAL" />
       <updated>1766439590784</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Admin order control">
+      <option name="closed" value="true" />
+      <created>1766439968233</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1766439968233</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -210,7 +214,8 @@
     <MESSAGE value="cart" />
     <MESSAGE value="Order" />
     <MESSAGE value="Favorite" />
-    <option name="LAST_COMMIT_MESSAGE" value="Favorite" />
+    <MESSAGE value="Admin order control" />
+    <option name="LAST_COMMIT_MESSAGE" value="Admin order control" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
