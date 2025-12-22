@@ -1,6 +1,7 @@
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using NabzAfzarSample.Models;
+using NabzAfzarSample.Models.Favorites;
 using NabzAfzarSample.Models.Orders;
 
 namespace NabzAfzarSample.Data;
@@ -12,6 +13,5 @@ public class ApplicationDbContext(DbContextOptions<ApplicationDbContext> options
     public DbSet<ProductImage> ProductImages => Set<ProductImage>();
     public DbSet<Order> Orders => Set<Order>();
     public DbSet<OrderItem> OrderItems => Set<OrderItem>();
-
-
+    public DbSet<Favorite> Favorites => Set<Favorite>();
 }

@@ -1,0 +1,31 @@
+@model List<NabzAfzarSample.Models.Favorites.Favorite>
+
+<h2>My Favorites</h2>
+
+@if (!Model.Any())
+{
+    <p>You have no favorite products.</p>
+}
+else
+{
+    <div class="row">
+        @foreach (var f in Model)
+        {
+            <div class="col-md-4 mb-3">
+                <div class="card">
+                    <div class="card-body">
+                        <h5>@f.Product.Name</h5>
+                        <p>@f.Product.Price</p>
+
+                        <a asp-controller="Favorites"
+                           asp-action="Toggle"
+                           asp-route-productId="@f.ProductId"
+                           class="btn btn-sm btn-danger">
+                            Remove
+                        </a>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+}

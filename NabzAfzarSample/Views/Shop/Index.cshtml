@@ -1,6 +1,7 @@
 @model List<NabzAfzarSample.Models.Product>
 @{
-    var cart = ViewBag.Cart as List<NabzAfzarSample.Models.Cart.CartItem> ?? new();
+    var cart = ViewBag.Cart as List<NabzAfzarSample.Models.Cart.CartItem> ?? [];
+    var favIds = ViewBag.FavoriteIds as HashSet<int> ?? [];
 }
 
 <h2>Shop</h2>
@@ -10,12 +11,22 @@
     {
         var item = cart.FirstOrDefault(x => x.ProductId == p.Id);
         var qty = item?.Quantity ?? 0;
+        var isFav = favIds.Contains(p.Id);
 
         <div class="col-md-4 mb-4">
             <div class="card">
                 <div class="card-body text-center">
                     <h5>@p.Name</h5>
                     <p>@p.Price</p>
+
+                    <a class="btn btn-sm @(isFav ? "btn-warning" : "btn-outline-warning") mt-2"
+                       asp-controller="Favorites"
+                       asp-action="Toggle"
+                       asp-route-productId="@p.Id"
+                       asp-route-returnUrl="@($"{Context.Request.Path}{Context.Request.QueryString}")">
+                        @(isFav ? "Remove from Favorites" : "Add to Favorites")
+                    </a>
+
 
                     <div class="d-flex justify-content-center align-items-center gap-2">
                         <a class="btn btn-outline-danger btn-sm"
