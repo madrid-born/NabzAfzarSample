@@ -10,12 +10,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="df67e6af-6a98-42b8-a799-26336f48dec6" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/NabzAfzarSample/Controllers/CartController.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/NabzAfzarSample/Extensions/SessionExtensions.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/NabzAfzarSample/Models/Cart/CartItem.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/NabzAfzarSample/Views/Cart/Index.cshtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NabzAfzarSample/Controllers/CheckoutController.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NabzAfzarSample/Controllers/OrdersController.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NabzAfzarSample/Models/Orders/Order.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NabzAfzarSample/Models/Orders/OrderItem.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NabzAfzarSample/Views/Checkout/Index.cshtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NabzAfzarSample/Views/Checkout/Success.cshtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NabzAfzarSample/Views/Orders/Index.cshtml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.NabzAfzarSample/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.NabzAfzarSample/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NabzAfzarSample/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/NabzAfzarSample/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NabzAfzarSample/Controllers/CartController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/NabzAfzarSample/Controllers/CartController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NabzAfzarSample/Data/ApplicationDbContext.cs" beforeDir="false" afterPath="$PROJECT_DIR$/NabzAfzarSample/Data/ApplicationDbContext.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NabzAfzarSample/Migrations/ApplicationDbContextModelSnapshot.cs" beforeDir="false" afterPath="$PROJECT_DIR$/NabzAfzarSample/Migrations/ApplicationDbContextModelSnapshot.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NabzAfzarSample/Views/Cart/Index.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/NabzAfzarSample/Views/Cart/Index.cshtml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/NabzAfzarSample/Views/Shared/_Layout.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/NabzAfzarSample/Views/Shared/_Layout.cshtml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/NabzAfzarSample/Views/Shop/Index.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/NabzAfzarSample/Views/Shop/Index.cshtml" afterDir="false" />
     </list>
@@ -127,7 +133,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1766428812185</updated>
-      <workItem from="1766428814166" duration="8901000" />
+      <workItem from="1766428814166" duration="9862000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <option name="closed" value="true" />
@@ -169,7 +175,15 @@
       <option name="project" value="LOCAL" />
       <updated>1766436257658</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="cart">
+      <option name="closed" value="true" />
+      <created>1766438234112</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1766438234112</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -184,7 +198,8 @@
     <MESSAGE value="product models" />
     <MESSAGE value="admin area" />
     <MESSAGE value="shop and product models" />
-    <option name="LAST_COMMIT_MESSAGE" value="shop and product models" />
+    <MESSAGE value="cart" />
+    <option name="LAST_COMMIT_MESSAGE" value="cart" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

@@ -27,12 +27,16 @@ else
                 <td>@item.Quantity</td>
                 <td>@item.Total</td>
                 <td class="text-center">
-                    <a asp-action="Decrease" asp-route-productId="@item.ProductId"
+                    <a asp-action="Decrease"
+                       asp-route-productId="@item.ProductId"
+                       asp-route-returnUrl="@($"{Context.Request.Path}{Context.Request.QueryString}")"
                        class="btn btn-sm btn-outline-danger">−</a>
 
                     <span class="mx-2">@item.Quantity</span>
 
-                    <a asp-action="Increase" asp-route-productId="@item.ProductId"
+                    <a asp-action="Increase"
+                       asp-route-productId="@item.ProductId"
+                       asp-route-returnUrl="@($"{Context.Request.Path}{Context.Request.QueryString}")"
                        class="btn btn-sm btn-outline-success">+</a>
                 </td>
 
@@ -43,5 +47,9 @@ else
 
     <h4>Total: @Model.Sum(x => x.Total)</h4>
 
-    <a class="btn btn-success">Checkout</a>
+    <a class="btn btn-success"
+       asp-controller="Checkout"
+       asp-action="Index">
+        Checkout
+    </a>
 }

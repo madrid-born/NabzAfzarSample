@@ -19,7 +19,7 @@ public class CartController : Controller
         return View(cart);
     }
 
-    public async Task<IActionResult> Increase(int productId)
+    public async Task<IActionResult> Increase(int productId, string? returnUrl = null)
     {
         var product = await _db.Products.FindAsync(productId);
         if (product == null) return NotFound();
@@ -44,10 +44,11 @@ public class CartController : Controller
         }
 
         HttpContext.Session.SetObject(CartKey, cart);
-        return RedirectToAction("Index", "Cart");
+
+        return Redirect(returnUrl ?? Url.Action("Index", "Shop")!);
     }
 
-    public IActionResult Decrease(int productId)
+    public IActionResult Decrease(int productId, string? returnUrl = null)
     {
         var cart = HttpContext.Session.GetObject<List<CartItem>>(CartKey)
                    ?? new List<CartItem>();
@@ -61,7 +62,9 @@ public class CartController : Controller
         }
 
         HttpContext.Session.SetObject(CartKey, cart);
-        return RedirectToAction("Index", "Cart");
+
+        return Redirect(returnUrl ?? Url.Action("Index", "Shop")!);
     }
+
 
 }

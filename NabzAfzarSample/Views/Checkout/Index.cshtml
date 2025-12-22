@@ -1,0 +1,30 @@
+@model List<NabzAfzarSample.Models.Cart.CartItem>
+
+<h2>Checkout</h2>
+
+<table class="table">
+    <thead>
+    <tr>
+        <th>Product</th>
+        <th>Qty</th>
+        <th>Total</th>
+    </tr>
+    </thead>
+    <tbody>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@item.ProductName</td>
+            <td>@item.Quantity</td>
+            <td>@item.Total</td>
+        </tr>
+    }
+    </tbody>
+</table>
+
+<h4>Total: @Model.Sum(x => x.Total)</h4>
+
+<form method="post" asp-action="PlaceOrder">
+    @Html.AntiForgeryToken()
+    <button class="btn btn-success">Confirm Purchase</button>
+</form>

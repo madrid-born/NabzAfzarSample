@@ -21,14 +21,16 @@
                         <a class="btn btn-outline-danger btn-sm"
                            asp-controller="Cart"
                            asp-action="Decrease"
-                           asp-route-productId="@p.Id">−</a>
+                           asp-route-productId="@p.Id"
+                           asp-route-returnUrl="@($"{Context.Request.Path}{Context.Request.QueryString}")">−</a>
 
                         <span class="fw-bold">@qty</span>
 
                         <a class="btn btn-outline-success btn-sm"
                            asp-controller="Cart"
                            asp-action="Increase"
-                           asp-route-productId="@p.Id">+</a>
+                           asp-route-productId="@p.Id"
+                           asp-route-returnUrl="@($"{Context.Request.Path}{Context.Request.QueryString}")">+</a>
                     </div>
                 </div>
             </div>

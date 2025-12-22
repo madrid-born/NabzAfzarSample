@@ -1,0 +1,21 @@
+@model List<NabzAfzarSample.Models.Orders.Order>
+
+<h2>My Orders</h2>
+
+@foreach (var order in Model)
+{
+    <div class="card mb-3">
+        <div class="card-body">
+            <h5>Order #@order.Id</h5>
+            <p>Date: @order.CreatedAt.ToLocalTime()</p>
+            <p>Total: @order.TotalAmount</p>
+
+            <ul>
+                @foreach (var item in order.Items)
+                {
+                    <li>@item.ProductName × @item.Quantity</li>
+                }
+            </ul>
+        </div>
+    </div>
+}
