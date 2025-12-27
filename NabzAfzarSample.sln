@@ -2,6 +2,8 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NabzAfzarSample", "NabzAfzarSample\NabzAfzarSample.csproj", "{4CEF81ED-E6D1-4030-A722-53D0056F57BD}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NabzAfzarSample.Web", "NabzAfzarSample.Web\NabzAfzarSample.Web.csproj", "{06A1F10C-1829-46AE-A44E-12A18803C6FE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -12,5 +14,9 @@ Global
 		{4CEF81ED-E6D1-4030-A722-53D0056F57BD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4CEF81ED-E6D1-4030-A722-53D0056F57BD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4CEF81ED-E6D1-4030-A722-53D0056F57BD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{06A1F10C-1829-46AE-A44E-12A18803C6FE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{06A1F10C-1829-46AE-A44E-12A18803C6FE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{06A1F10C-1829-46AE-A44E-12A18803C6FE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{06A1F10C-1829-46AE-A44E-12A18803C6FE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

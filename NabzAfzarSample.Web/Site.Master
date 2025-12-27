@@ -1,0 +1,36 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.Master.cs" Inherits="NabzAfzarSample.SiteMaster" %>
+<!DOCTYPE html>
+<html>
+<head runat="server">
+    <title>NabzAfzarSample</title>
+    <link href="Content/site.css" rel="stylesheet" />
+</head>
+<body>
+<form runat="server">
+    <div class="topbar">
+        <% if (Context.User.IsInRole("Admin")) { %>
+            <a href="/Admin/Dashboard.aspx" style="color:#b00020;font-weight:bold;">Admin</a> | 
+        <% } %>
+
+        <a href="/Shop.aspx">Shop</a>
+        <a href="/Cart.aspx">Cart (<%= GetCartCount() %>)</a>
+        <% if (Context.Request.IsAuthenticated) { %>
+            |
+            <a href="/MyOrders.aspx">My Orders</a>
+            <a href="/Favorites.aspx">Favorites</a>
+            | Hello,
+            <strong><%= Context.User.Identity.Name %></strong>
+            <a href="/Account/Logout.aspx">Logout</a>
+        <% } else { %>
+            | <a href="/Account/Login.aspx">Login</a>
+             <a href="/Account/Register.aspx">Register</a>
+        <% } %>
+    </div>
+
+
+    <div class="container">
+        <asp:ContentPlaceHolder ID="MainContent" runat="server" />
+    </div>
+</form>
+</body>
+</html>
