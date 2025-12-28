@@ -11,7 +11,6 @@ namespace NabzAfzarSample.Seed
         {
             using (var db = new AppDbContext())
             {
-                // Seed categories (only if missing)
                 var electronics = db.Categories.FirstOrDefault(c => c.Name == "Electronics");
                 if (electronics == null)
                 {
@@ -35,7 +34,6 @@ namespace NabzAfzarSample.Seed
 
                 db.SaveChanges();
 
-                // Helper: create product if not exists, and ensure primary image exists/updated
                 void UpsertProduct(
                     string name,
                     string description,
@@ -60,11 +58,10 @@ namespace NabzAfzarSample.Seed
                         };
 
                         db.Products.Add(product);
-                        db.SaveChanges(); // to get product.Id
+                        db.SaveChanges();
                     }
                     else
                     {
-                        // Optional: keep your demo data "fresh"
                         product.Description = description;
                         product.Price = price;
                         product.StockQuantity = stock;
@@ -73,7 +70,6 @@ namespace NabzAfzarSample.Seed
                         db.SaveChanges();
                     }
 
-                    // Seed / update primary image
                     if (!string.IsNullOrWhiteSpace(primaryImageUrl))
                     {
                         var existingPrimary = db.ProductImages
@@ -97,7 +93,6 @@ namespace NabzAfzarSample.Seed
                     }
                 }
 
-                // Products + images (use stable public URLs)
                 UpsertProduct(
                     name: "Wireless Mouse",
                     description: "2.4G wireless mouse",

@@ -9,7 +9,6 @@ namespace NabzAfzarSample
 {
     public partial class CartPage : System.Web.UI.Page
     {
-        // Rider: declare controls manually
         protected Repeater CartRepeater;
         protected Literal EmptyMessage;
         protected Literal TotalLiteral;

@@ -8,7 +8,6 @@ namespace NabzAfzarSample
 {
     public partial class MyOrdersPage : System.Web.UI.Page
     {
-        // Rider: declare controls manually
         protected Literal EmptyMessage;
         protected Repeater OrdersRepeater;
         protected Panel ItemsPanel;

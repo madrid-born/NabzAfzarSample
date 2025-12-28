@@ -8,7 +8,6 @@ namespace NabzAfzarSample.Admin
 {
     public partial class Categories : System.Web.UI.Page
     {
-        // Rider: declare controls manually
         protected HiddenField CategoryIdHidden;
         protected TextBox NameTextBox;
         protected TextBox DescTextBox;
@@ -113,7 +112,6 @@ namespace NabzAfzarSample.Admin
                 var category = _db.Categories.Find(id);
                 if (category == null) return;
 
-                // Optional safety: prevent delete if category has products
                 var hasProducts = _db.Products.Any(p => p.CategoryId == id);
                 if (hasProducts)
                 {

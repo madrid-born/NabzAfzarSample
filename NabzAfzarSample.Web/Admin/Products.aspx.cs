@@ -8,7 +8,6 @@ namespace NabzAfzarSample.Admin
 {
     public partial class Products : System.Web.UI.Page
     {
-        // Rider: declare controls manually
         protected HiddenField ProductIdHidden;
         protected TextBox NameTextBox;
         protected TextBox DescTextBox;
@@ -218,7 +217,6 @@ namespace NabzAfzarSample.Admin
                 var product = _db.Products.Find(id);
                 if (product == null) return;
 
-                // Optional: prevent delete if used in orders
                 var usedInOrders = _db.OrderItems.Any(i => i.ProductId == id);
                 if (usedInOrders)
                 {

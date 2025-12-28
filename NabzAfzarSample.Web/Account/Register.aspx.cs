@@ -29,7 +29,6 @@ namespace NabzAfzarSample.Account
 
             if (result.Succeeded)
             {
-                // ✅ Ensure Customer role exists
                 var identityDb = Context.GetOwinContext()
                     .Get<ApplicationIdentityDbContext>();
 

@@ -11,7 +11,6 @@ namespace NabzAfzarSample.Identity
         public ApplicationUserManager(IUserStore<ApplicationUser> store)
             : base(store)
         {
-            // Basic password rules (can be stricter)
             PasswordValidator = new PasswordValidator
             {
                 RequiredLength = 6,

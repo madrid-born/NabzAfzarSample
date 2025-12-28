@@ -3,34 +3,63 @@
 <html>
 <head runat="server">
     <title>NabzAfzarSample</title>
+    <meta charset="utf-8" />
     <link href="Content/site.css" rel="stylesheet" />
 </head>
-<body>
+
+<body class="app">
 <form runat="server">
-    <div class="topbar">
-        <% if (Context.User.IsInRole("Admin")) { %>
-            <a href="/Admin/Dashboard.aspx" style="color:#b00020;font-weight:bold;">Admin</a> | 
-        <% } %>
 
-        <a href="/Shop.aspx">Shop</a>
-        <a href="/Cart.aspx">Cart (<%= GetCartCount() %>)</a>
-        <% if (Context.Request.IsAuthenticated) { %>
-            |
-            <a href="/MyOrders.aspx">My Orders</a>
-            <a href="/Favorites.aspx">Favorites</a>
-            | Hello,
-            <strong><%= Context.User.Identity.Name %></strong>
-            <a href="/Account/Logout.aspx">Logout</a>
-        <% } else { %>
-            | <a href="/Account/Login.aspx">Login</a>
-             <a href="/Account/Register.aspx">Register</a>
-        <% } %>
-    </div>
+    <header class="topbar">
+        <div class="topbar__inner">
+            <div class="brand">
+                <a class="brand__logo" href="/Shop.aspx">NA</a>
+                <a class="brand__name" href="/Shop.aspx">NabzAfzar</a>
+                
+                <a class="nav__link" href="/Shop.aspx">Shop</a>
+                <a class="nav__link" href="/Cart.aspx">
+                    Cart <span class="badge"><%= GetCartCount() %></span>
+                </a>
+                
+                <% if (Context.Request.IsAuthenticated) { %>
+                    <span class="nav__sep">.</span>
+                    <a class="nav__link" href="/MyOrders.aspx">My Orders</a>
+                    <a class="nav__link" href="/Favorites.aspx">Favorites</a>
+                <% } %>
+            </div>
 
+            <nav class="nav">
+                
 
-    <div class="container">
+                
+
+                <% if (Context.Request.IsAuthenticated) { %>
+                    <span class="nav__meta">
+                        Hello, <strong class="nav__user"><%= Context.User.Identity.Name %></strong>
+                    </span>
+                    <% if (Context.User.IsInRole("Admin")) { %>
+                        <span class="nav__sep">.</span>
+                        <a class="nav__link nav__link--danger" href="/Admin/Dashboard.aspx">Admin</a>
+                    <% } %>
+                    <a class="nav__link nav__link--muted" href="/Account/Logout.aspx">Logout</a>
+                <% } else { %>
+                    <a class="nav__link" href="/Account/Login.aspx">Login</a>
+                    <a class="nav__link nav__link--primary" href="/Account/Register.aspx">Register</a>
+                <% } %>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
         <asp:ContentPlaceHolder ID="MainContent" runat="server" />
-    </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__inner">
+            <span><%= DateTime.Now.Year %> NabzAfzarSample</span>
+        </div>
+    </footer>
+
 </form>
 </body>
 </html>

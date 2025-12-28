@@ -14,63 +14,34 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="df67e6af-6a98-42b8-a799-26336f48dec6" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.NabzAfzarSample/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/NabzAfzarSample.Web/Account/Login.aspx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/NabzAfzarSample.Web/Account/Login.aspx.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/NabzAfzarSample.Web/Account/Logout.aspx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/NabzAfzarSample.Web/Account/Logout.aspx.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/NabzAfzarSample.Web/Account/Register.aspx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/NabzAfzarSample.Web/Account/Register.aspx.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/NabzAfzarSample.Web/Admin/Categories.aspx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/NabzAfzarSample.Web/Admin/Categories.aspx.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/NabzAfzarSample.Web/Admin/Dashboard.aspx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/NabzAfzarSample.Web/Admin/Dashboard.aspx.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/NabzAfzarSample.Web/Admin/Orders.aspx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/NabzAfzarSample.Web/Admin/Orders.aspx.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/NabzAfzarSample.Web/Admin/Products.aspx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/NabzAfzarSample.Web/Admin/Products.aspx.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/NabzAfzarSample.Web/Admin/web.config" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/NabzAfzarSample.Web/App.config" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/NabzAfzarSample.Web/App_DataAccess/AppDbContext.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/NabzAfzarSample.Web/Cart.aspx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/NabzAfzarSample.Web/Cart.aspx.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/NabzAfzarSample.Web/Cart/CartItem.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/NabzAfzarSample.Web/Checkout.aspx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/NabzAfzarSample.Web/Checkout.aspx.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/NabzAfzarSample.Web/Content/site.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/NabzAfzarSample.Web/Default.aspx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/NabzAfzarSample.Web/Default.aspx.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/NabzAfzarSample.Web/Favorites.aspx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/NabzAfzarSample.Web/Favorites.aspx.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/NabzAfzarSample.Web/Global.asax" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/NabzAfzarSample.Web/Global.asax.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/NabzAfzarSample.Web/Identity/ApplicationIdentityDbContext.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/NabzAfzarSample.Web/Identity/ApplicationUser.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/NabzAfzarSample.Web/Identity/ApplicationUserManager.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/NabzAfzarSample.Web/Identity/IdentitySeeder.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/NabzAfzarSample.Web/Migrations/202512271453368_InitShop.Designer.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/NabzAfzarSample.Web/Migrations/202512271453368_InitShop.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/NabzAfzarSample.Web/Migrations/202512271453368_InitShop.resx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/NabzAfzarSample.Web/Migrations/Configuration.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/NabzAfzarSample.Web/Models/Category.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/NabzAfzarSample.Web/Models/Favorite.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/NabzAfzarSample.Web/Models/Order.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/NabzAfzarSample.Web/Models/OrderItem.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/NabzAfzarSample.Web/Models/Product.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/NabzAfzarSample.Web/Models/ProductImage.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/NabzAfzarSample.Web/MyOrders.aspx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/NabzAfzarSample.Web/MyOrders.aspx.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/NabzAfzarSample.Web/NabzAfzarSample.Web.csproj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/NabzAfzarSample.Web/Seed/ShopSeeder.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/NabzAfzarSample.Web/Shop.aspx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/NabzAfzarSample.Web/Shop.aspx.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/NabzAfzarSample.Web/Site.Master" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/NabzAfzarSample.Web/Site.Master.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/NabzAfzarSample.Web/Startup.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/NabzAfzarSample.Web/packages.config" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/NabzAfzarSample.Web/web.config" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.NabzAfzarSample/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.NabzAfzarSample/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NabzAfzarSample.sln" beforeDir="false" afterPath="$PROJECT_DIR$/NabzAfzarSample.sln" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NabzAfzarSample.Web/Account/Login.aspx" beforeDir="false" afterPath="$PROJECT_DIR$/NabzAfzarSample.Web/Account/Login.aspx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NabzAfzarSample.Web/Account/Register.aspx" beforeDir="false" afterPath="$PROJECT_DIR$/NabzAfzarSample.Web/Account/Register.aspx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NabzAfzarSample.Web/Account/Register.aspx.cs" beforeDir="false" afterPath="$PROJECT_DIR$/NabzAfzarSample.Web/Account/Register.aspx.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NabzAfzarSample.Web/Admin/Categories.aspx" beforeDir="false" afterPath="$PROJECT_DIR$/NabzAfzarSample.Web/Admin/Categories.aspx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NabzAfzarSample.Web/Admin/Categories.aspx.cs" beforeDir="false" afterPath="$PROJECT_DIR$/NabzAfzarSample.Web/Admin/Categories.aspx.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NabzAfzarSample.Web/Admin/Dashboard.aspx" beforeDir="false" afterPath="$PROJECT_DIR$/NabzAfzarSample.Web/Admin/Dashboard.aspx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NabzAfzarSample.Web/Admin/Orders.aspx" beforeDir="false" afterPath="$PROJECT_DIR$/NabzAfzarSample.Web/Admin/Orders.aspx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NabzAfzarSample.Web/Admin/Orders.aspx.cs" beforeDir="false" afterPath="$PROJECT_DIR$/NabzAfzarSample.Web/Admin/Orders.aspx.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NabzAfzarSample.Web/Admin/Products.aspx" beforeDir="false" afterPath="$PROJECT_DIR$/NabzAfzarSample.Web/Admin/Products.aspx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NabzAfzarSample.Web/Admin/Products.aspx.cs" beforeDir="false" afterPath="$PROJECT_DIR$/NabzAfzarSample.Web/Admin/Products.aspx.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NabzAfzarSample.Web/Cart.aspx" beforeDir="false" afterPath="$PROJECT_DIR$/NabzAfzarSample.Web/Cart.aspx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NabzAfzarSample.Web/Cart.aspx.cs" beforeDir="false" afterPath="$PROJECT_DIR$/NabzAfzarSample.Web/Cart.aspx.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NabzAfzarSample.Web/Checkout.aspx" beforeDir="false" afterPath="$PROJECT_DIR$/NabzAfzarSample.Web/Checkout.aspx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NabzAfzarSample.Web/Checkout.aspx.cs" beforeDir="false" afterPath="$PROJECT_DIR$/NabzAfzarSample.Web/Checkout.aspx.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NabzAfzarSample.Web/Content/site.css" beforeDir="false" afterPath="$PROJECT_DIR$/NabzAfzarSample.Web/Content/site.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NabzAfzarSample.Web/Favorites.aspx" beforeDir="false" afterPath="$PROJECT_DIR$/NabzAfzarSample.Web/Favorites.aspx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NabzAfzarSample.Web/Favorites.aspx.cs" beforeDir="false" afterPath="$PROJECT_DIR$/NabzAfzarSample.Web/Favorites.aspx.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NabzAfzarSample.Web/Identity/ApplicationUser.cs" beforeDir="false" afterPath="$PROJECT_DIR$/NabzAfzarSample.Web/Identity/ApplicationUser.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NabzAfzarSample.Web/Identity/ApplicationUserManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/NabzAfzarSample.Web/Identity/ApplicationUserManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NabzAfzarSample.Web/Models/Order.cs" beforeDir="false" afterPath="$PROJECT_DIR$/NabzAfzarSample.Web/Models/Order.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NabzAfzarSample.Web/MyOrders.aspx" beforeDir="false" afterPath="$PROJECT_DIR$/NabzAfzarSample.Web/MyOrders.aspx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NabzAfzarSample.Web/MyOrders.aspx.cs" beforeDir="false" afterPath="$PROJECT_DIR$/NabzAfzarSample.Web/MyOrders.aspx.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NabzAfzarSample.Web/Seed/ShopSeeder.cs" beforeDir="false" afterPath="$PROJECT_DIR$/NabzAfzarSample.Web/Seed/ShopSeeder.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NabzAfzarSample.Web/Shop.aspx" beforeDir="false" afterPath="$PROJECT_DIR$/NabzAfzarSample.Web/Shop.aspx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NabzAfzarSample.Web/Shop.aspx.cs" beforeDir="false" afterPath="$PROJECT_DIR$/NabzAfzarSample.Web/Shop.aspx.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NabzAfzarSample.Web/Site.Master" beforeDir="false" afterPath="$PROJECT_DIR$/NabzAfzarSample.Web/Site.Master" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NabzAfzarSample.Web/Startup.cs" beforeDir="false" afterPath="$PROJECT_DIR$/NabzAfzarSample.Web/Startup.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/NabzAfzarSample.sln.DotSettings.user" beforeDir="false" afterPath="$PROJECT_DIR$/NabzAfzarSample.sln.DotSettings.user" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -103,6 +74,8 @@
   }
 }</component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="jar://$APPLICATION_HOME_DIR$/lib/app.jar!/resources/html5-schema/html5/structural.rnc" root0="FORCE_HIGHLIGHTING" />
+    <setting file="jar://$APPLICATION_HOME_DIR$/lib/app.jar!/resources/html5-schema/html5/tables.rnc" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/068a3c4080104e51828ab210be168ae84c2978/50/ca23fe67/MigrationsException.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/068a3c4080104e51828ab210be168ae84c2978/9a/f27ffe4b/LazyInternalConnection.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/1f697140ec904e919515466b85fe6f37271c0/01/6ebc0d56/UserManagerExtensions.cs" root0="FORCE_HIGHLIGHTING" />
@@ -110,10 +83,14 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/25c798a63b834472a45376c3790fc7e0526838/c5/7691ad02/HttpApplication.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/3020f90f960f433086d545c4e07afdfd531820/17/14d56b11/ArgumentNullException.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/39310de1c8d1423c90f50b41bf9764fd529a38/02/3b08e322/GridViewCommandEventArgs.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/39310de1c8d1423c90f50b41bf9764fd529a38/b2/57ebb339/TemplateControl.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/39310de1c8d1423c90f50b41bf9764fd529a38/ed/4daf126b/Button.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/84fcb78acefe4e78aa1e6486e623b385dd98/a5/29645399/AppBuilderExtensions.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/f4977326de624e75ac98400b9addc19212dc0/75/bd1a8a07/IdentityUser.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/294078ecfce6fdb942ecfee089f09717de7a6fcfe5efd9fdb6f4f93c0fb4813/ActionMethodExecutor.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/96a4cc66aa48dda8a9d8be8febec4a769fc143f7a86dd53ecdebfb9c3177d/ControllerBase.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/NabzAfzarSample/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.min.css.map" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/NabzAfzarSample/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.min.js.map" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="KubernetesApiPersistence">{}</component>
   <component name="KubernetesApiProvider">{
@@ -121,7 +98,7 @@
 }</component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
   <component name="ProblemsViewState">
-    <option name="selectedTabId" value="SWEA" />
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;customColor&quot;: &quot;&quot;,
@@ -154,6 +131,7 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "reference.settings.deploy.options",
     "vue.rearranger.settings.migration": "true"
   },
   "keyToStringList": {
@@ -243,7 +221,7 @@
       <option name="presentableId" value="Default" />
       <updated>1766428812185</updated>
       <workItem from="1766428814166" duration="13873000" />
-      <workItem from="1766842971099" duration="15601000" />
+      <workItem from="1766842971099" duration="21883000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <option name="closed" value="true" />
@@ -341,7 +319,15 @@
       <option name="project" value="LOCAL" />
       <updated>1766441691805</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="backend">
+      <option name="closed" value="true" />
+      <created>1766867286480</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1766867286480</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -374,7 +360,8 @@
     <MESSAGE value="search" />
     <MESSAGE value="Cart Summary" />
     <MESSAGE value="Cart management" />
-    <option name="LAST_COMMIT_MESSAGE" value="Cart management" />
+    <MESSAGE value="backend" />
+    <option name="LAST_COMMIT_MESSAGE" value="backend" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

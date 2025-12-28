@@ -8,7 +8,7 @@ namespace NabzAfzarSample
 {
     public partial class FavoritesPage : System.Web.UI.Page
     {
-        // Rider: declare controls manually
+        
         protected Literal EmptyMessage;
         protected Repeater FavoritesRepeater;
 
@@ -30,15 +30,31 @@ namespace NabzAfzarSample
         {
             var userId = Context.User.Identity.GetUserId();
 
-            var favorites = _db.Favorites
+            var favorites2 = _db.Favorites
                 .Where(f => f.UserId == userId)
                 .ToList();
+            
+            var query = _db.Favorites.Where(f => f.UserId == userId)
+                .ToList();
+            var favorites = query
+                .Select(p => new
+                {
+                    p.ProductId,
+                    Product = _db.Products.Find(p.ProductId),
+                    ImageUrl = _db.ProductImages
+                        .Where(i => i.ProductId == p.ProductId && i.IsPrimary)
+                        .Select(i => i.ImageUrl)
+                        .FirstOrDefault()
+                })
+                .ToList();
 
-            // Load Product navigation manually (EF will lazy-load only if enabled; safer to load explicitly)
-            foreach (var f in favorites)
-            {
-                f.Product = _db.Products.Find(f.ProductId);
-            }
+
+            
+            
+            
+            
+            
+            
 
             if (!favorites.Any())
             {

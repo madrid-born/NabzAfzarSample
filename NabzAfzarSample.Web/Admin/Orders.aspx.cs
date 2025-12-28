@@ -9,7 +9,6 @@ namespace NabzAfzarSample.Admin
 {
     public partial class Orders : System.Web.UI.Page
     {
-        // Rider: declare controls manually
         protected Literal MessageLiteral;
         protected GridView OrdersGrid;
 
@@ -87,7 +86,6 @@ namespace NabzAfzarSample.Admin
                 $"Date: {order.CreatedAt.ToLocalTime():yyyy-MM-dd HH:mm}<br/>" +
                 $"Total: {order.TotalAmount}<br/>";
 
-            // Ensure dropdown has values (in case someone calls this before BindStatusDropdown)
             if (StatusDropDown.Items.Count == 0)
                 BindStatusDropdown();
 
@@ -140,7 +138,6 @@ namespace NabzAfzarSample.Admin
             MessageLiteral.Text = "Order status updated.";
             BindOrders();
 
-            // keep details panel open and refreshed
             ShowOrderDetails(orderId);
         }
     }

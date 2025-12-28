@@ -11,6 +11,10 @@ namespace NabzAfzarSample
 {
     public partial class Shop : System.Web.UI.Page
     {
+        protected TextBox SearchTextBox;
+        protected DropDownList CategoryDropDown;
+        protected Button SearchButton;
+        protected Button ClearButton;
         protected Repeater ProductsRepeater;
 
         private AppDbContext _db = new AppDbContext();
@@ -18,13 +22,32 @@ namespace NabzAfzarSample
         protected void Page_Load(object sender, EventArgs e)
         {
             if (!IsPostBack)
-                LoadProducts();
+            {
+                BindCategories();
+                LoadProducts(); 
+            }
         }
+
 
         private void LoadProducts()
         {
-            var products = _db.Products
-                .Where(p => p.IsActive)
+            var query = _db.Products.Where(p => p.IsActive);
+
+            
+            var search = (SearchTextBox?.Text ?? "").Trim();
+            if (!string.IsNullOrWhiteSpace(search))
+            {
+                query = query.Where(p => p.Name.Contains(search));
+            }
+
+            
+            if (int.TryParse(CategoryDropDown?.SelectedValue, out var categoryId) && categoryId > 0)
+            {
+                query = query.Where(p => p.CategoryId == categoryId);
+            }
+
+            var products = query
+                .OrderBy(p => p.Name)
                 .ToList()
                 .Select(p => new
                 {
@@ -144,6 +167,34 @@ namespace NabzAfzarSample
             }
 
             _db.SaveChanges();
+            LoadProducts();
+        }
+        
+        private void BindCategories()
+        {
+            var categories = _db.Categories
+                .Where(c => c.IsActive)
+                .OrderBy(c => c.Name)
+                .ToList();
+
+            CategoryDropDown.Items.Clear();
+            CategoryDropDown.Items.Add(new ListItem("All Categories", ""));
+
+            foreach (var c in categories)
+                CategoryDropDown.Items.Add(new ListItem(c.Name, c.Id.ToString()));
+        }
+        
+        protected void Search_Click(object sender, EventArgs e)
+        {
+            LoadProducts();
+        }
+
+        protected void Clear_Click(object sender, EventArgs e)
+        {
+            SearchTextBox.Text = "";
+            if (CategoryDropDown.Items.Count > 0)
+                CategoryDropDown.SelectedIndex = 0;
+
             LoadProducts();
         }
     }

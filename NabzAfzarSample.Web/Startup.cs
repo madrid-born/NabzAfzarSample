@@ -12,10 +12,8 @@ namespace NabzAfzarSample
     {
         public void Configuration(IAppBuilder app)
         {
-            // DbContext per request
             app.CreatePerOwinContext(ApplicationIdentityDbContext.Create);
 
-            // UserManager per request ✅ THIS WAS MISSING
             app.CreatePerOwinContext<ApplicationUserManager>(
                 ApplicationUserManager.Create);
 

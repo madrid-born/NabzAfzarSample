@@ -12,7 +12,6 @@ namespace NabzAfzarSample
 {
     public partial class CheckoutPage : System.Web.UI.Page
     {
-        // Rider: declare controls manually
         protected Literal SummaryLiteral;
         protected Button ConfirmButton;
         protected Literal ResultLiteral;
@@ -31,7 +30,6 @@ namespace NabzAfzarSample
 
         protected void Page_Load(object sender, EventArgs e)
         {
-            // Require login
             if (!Request.IsAuthenticated)
             {
                 Response.Redirect("~/Account/Login.aspx");
@@ -61,8 +59,8 @@ namespace NabzAfzarSample
 
             var userId = Context.User.Identity.GetUserId();
 
-            // Load products and validate stock
-            var productIds = Cart.Select(x => x.ProductId).Distinct().ToList();
+            
+            var productIds = Cart.Select(x => x.ProductId).Distinct().ToList(); 
             var products = _db.Products.Where(p => productIds.Contains(p.Id)).ToList();
 
             foreach (var item in Cart)
@@ -87,7 +85,7 @@ namespace NabzAfzarSample
                 }
             }
 
-            // Create order + decrease stock
+            
             var order = new Order
             {
                 UserId = userId,
@@ -114,7 +112,7 @@ namespace NabzAfzarSample
             _db.Orders.Add(order);
             _db.SaveChanges();
 
-            // Clear cart
+            
             Session["CART"] = new List<CartItem>();
 
             ConfirmButton.Enabled = false;
